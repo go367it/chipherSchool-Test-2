@@ -1,11 +1,13 @@
 import "./App.css";
-import Card from "./components/Card";
+import Card from "./components/Card"; // importing card components
+// importing images from images folder
 import Image1 from './images/image1.jpg';
 import Image2 from './images/image2.jpg';
 import Image3 from './images/image3.jpg';
 import Image4 from './images/image4.jpg';
 import Image5 from './images/image5.jpg';
 
+// demo data for displaying the content
 const data = [
   {
     image: Image1,
@@ -37,6 +39,7 @@ function App() {
         {
           data.map(j=>{
             return(
+              // paasing props to the card component 
               <Card image={j.image} name={j.name} />
             )
           })
